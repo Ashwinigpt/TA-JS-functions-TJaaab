@@ -64,12 +64,14 @@ function calc (numA, numB, operation) {
     return(numA - numB);
 } else if (typeof numA === "number" && typeof numB === "number" && operation === "mul") {
   return(numA * numB);
+} else if (typeof numA === "number" && typeof numB === "number" && operation === "div") {
+  return(numA / numB);
 } else { 
   alert("Enter Valid Input")
 }
 }
 
-let number1 = calc(10, 20, 'add'); 
+let number1 = calc(10, 20, 'add');
 let number2 = calc(20, 10, 'sub'); 
 let number3 = calc(20, 10, 'mul'); 
 
