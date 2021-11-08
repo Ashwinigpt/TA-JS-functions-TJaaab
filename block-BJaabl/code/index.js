@@ -71,7 +71,7 @@ function calc (numA, numB, operation) {
 }
 }
 
-let number1 = calc(10, 20, 'add'); 
+let number1 = calc(10, 20, 'add');
 let number2 = calc(20, 10, 'sub'); 
 let number3 = calc(20, 10, 'mul'); 
 
