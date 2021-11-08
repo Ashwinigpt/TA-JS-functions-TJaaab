@@ -64,6 +64,8 @@ function calc (numA, numB, operation) {
     return(numA - numB);
 } else if (typeof numA === "number" && typeof numB === "number" && operation === "mul") {
   return(numA * numB);
+} else if (typeof numA === "number" && typeof numB === "number" && operation === "div") {
+  return(numA / numB);
 } else { 
   alert("Enter Valid Input")
 }
