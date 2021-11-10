@@ -9,8 +9,7 @@
 */
 
 function calculateDogAge(dogAge, humanYear = 7) {
-  let age = dogAge * humanYear;
-  return age;
+  return dogAge * humanYear;
 }
 calculateDogAge(5);
 
@@ -21,8 +20,10 @@ calculateDogAge(5);
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch(age, numberOfMovies = 4) {
-  
+function calculateMoviesToWatch(age, noOfMovies) {
+  const MAX_AGE = 80;
+  let totalNumberOfMovies = (MAX_AGE - age) * 12 * 4 * noOfMovies;
+  return totalNumberOfMovies;
 }
 
 /*
@@ -107,7 +108,7 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 
 function sumOfN(n) {
   let sum = 0;
-  for(a = 1; a <= n; a++) {
+  for(let a = 1; a <= n; a++) {
     sum = sum + a;
   }
   return sum
@@ -118,7 +119,17 @@ sumOfN(5);
 8. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 */
 
-// Your code goes here
+function sumOfN(n) {
+  let sum = 0;
+  for(let a = 1; a <= n; a++) {
+    if (i % 5 === 0 || i % 7 === 0) {
+    sum = sum + a;
+  }
+}
+  return sum
+}
+sumOfN(5);
+
 
 /*
 9. 🎖Write a function `min` that takes two arguments and returns their minimum.
