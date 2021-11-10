@@ -10,8 +10,8 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec(integer, minutes = 60) {
-  return integer * minutes;
+function minToSec(minutes) {
+  return 60 * minutes;
 }
 // - Execute the function with required parameter
 
