@@ -2,11 +2,10 @@
 1. Create a function named `sayHello` that that accepts a parameter `name` and alert `Hello [name]!`.
 */
 
-function sayHello() {
-  let name = "Ashwini";
-  alert(`Hello ${name}`)
+function sayHello(name){
+  alert(`Hello ${name}`);
 }
-sayHello();
+sayHello("Ashwini");
 
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
@@ -85,10 +84,12 @@ isLeapYear(2001); // false
 */
 
 function isLeapYear (year) {
-  if(year % 4 === 0 && year % 400 === 0) {
+  if(year % 400 === 0) {
     return(true);
   } else if(year % 100 === 0) {
     return(false);
+  } else if(year % 4 === 0) {
+    return(true);
   } else {
     return(false);
   }
@@ -110,4 +111,4 @@ function getFactorial (number) {
   return(`The factorial of ${number} is ${factorial}`);
 }
 let number = getFactorial(9);
-let number2 = getFactorial(3);
+let number4 = getFactorial(3);
